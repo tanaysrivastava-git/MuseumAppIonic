@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <b>Events</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="assets/museumday.jpg"></ion-img>
+      <ion-card-title color="primary"><b>International Museum Day 2021</b></ion-card-title><br>
+      <ion-card-subtitle>Registrations for the Online Art Contest on the ocassion of International Museum Day 2021 is now open. <br><br>Registration link: <br><br> <a (click)="contest1()">https://www.picassoartcontest.com/</a> </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <center><ion-button size="small" (click)=presentAlert()>Interested ?</ion-button></center>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="assets/artexibition.jpg"></ion-img>
+      <ion-card-title color="primary"><b>Join our Online Art Exibition</b></ion-card-title><br>
+      <ion-card-subtitle>Get your early access to our Global Art Community where you can collaborate with artists around the world & get perfect space for publishing your artworks for sale. <br><br>Register on the link provided below: <br><br> <a (click)="contest2()">https://ogdencontemporaryarts.org/upcoming-exhibitions/</a></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <center><ion-button size="small" (click)=presentAlert()>Interested ?</ion-button></center>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

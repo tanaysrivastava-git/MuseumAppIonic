@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><b>Feedback</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="fixed">Name :</ion-label>
+    <ion-input placeholder="Enter your name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">Email :</ion-label>
+    <ion-input placeholder="Enter your email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">Gender :</ion-label>
+    <ion-select>
+      <ion-select-option>Male</ion-select-option>
+      <ion-select-option>Female</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">Rating :</ion-label>
+    <ion-range pin="true" min="0" max="5" color="secondary" snaps="true" ticks="true"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Suggestions :</ion-label>
+    <ion-textarea placeholder="Enter your Suggestions"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">Maintenance</ion-label>
+    <ion-radio slot="end" color="secondary" value="anchovies"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Visitor Welcomed</ion-label>
+    <ion-radio slot="end" color="secondary"></ion-radio>
+  </ion-item>
+  <center><ion-button (click)="presentAlert()">Submit</ion-button></center>
+</ion-content>

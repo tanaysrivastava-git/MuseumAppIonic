@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="dark">
+      <b>The National Gallery</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card><br>
+    <center><ion-card-title color="primary"><b>Welcome</b></ion-card-title></center><br>
+    <ion-img src="assets/museum_interior.jpg"></ion-img><br>
+    <center><ion-card-title color="primary"><b>Experience 700 years <br>of paintings for free.</b></ion-card-title></center><br>
+
+    <center><ion-card-subtitle color="primary"><b>Open daily 10am–6pm <br> Trafalgar Square, London</b></ion-card-subtitle></center><br>
+  </ion-card>
+
+  <ion-card>    
+    <ion-img src="assets/museum_entrance.jpg"></ion-img><br>
+    <center><ion-card-title color="primary"><b>Your space for art</b></ion-card-title></center><br>
+    <center><ion-button size="small" color="primary" (click)="presentActionSheet()">Plan your visit ></ion-button></center><br>
+  </ion-card>
+</ion-content>
